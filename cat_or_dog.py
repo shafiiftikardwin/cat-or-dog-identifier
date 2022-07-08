@@ -31,7 +31,7 @@ def show():
             st.session_state.files.remove(st.session_state.current_image)
 
     image_path = (
-        "https://github.com/streamlit/release-demos/raw/0.84/0.84/demos/images/"
+        "https://github.com/shafiiftikardwin/diffrentiate_cat_or_dog/tree/main/images/"
         + st.session_state.current_image
     )
 
