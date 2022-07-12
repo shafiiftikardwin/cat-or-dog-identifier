@@ -17,7 +17,9 @@ def show():
     script_path = os.path.dirname(__file__)
     rel_path = "images"
     abs_file_path = script_path + "/" + rel_path
-    files ="https://github.com/shafiiftikardwin/cat-or-dog-identifier/tree/main/images"
+    files = os.listdir(abs_file_path)
+
+
 
     if "annotations" not in st.session_state:
         st.session_state.annotations = {}
